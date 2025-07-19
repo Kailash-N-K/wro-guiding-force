@@ -1,0 +1,1 @@
+@reboot sleep 30 && cd /home/dakshrpi && /home/dakshrpi/venv/bin/python3 /home/dakshrpi/obj_final_without_rpio_gpio.py >> /home/dakshrpi/obj_det.log 2>&1
