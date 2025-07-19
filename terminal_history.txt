@@ -1,0 +1,90 @@
+    1  cd /
+    2  clear
+    3  find . -name rc.loacl
+    4  sudo systemctl status graphical.service
+    5  id
+    6  sudo systemctl list-units --type=service --all
+    7  sudo systemctl list-units --type=service | grep running
+    8  sudo systemctl cat bluetooth.service
+    9  clear
+   10  sudo nano /etc/rc.local
+   11  pinout
+   12  python blink.py
+   13  chmod +x blink.py
+   14  ls
+   15  clear
+   16  sudo crontab -e
+   17  /bin/python /home/dakshrpi/blink.py
+   18  clear
+   19  sudo reboot
+   20  sudo crontab -e
+   21  sudo reboot
+   22  cd Desktop/Wro_obj/object_detect_1/
+   23  python -m venv --system-site-packages venv
+   24  source venv/bin/activate
+   25  clear
+   26  pip install opencv-python
+   27  pip install numpy==1.24.2
+   28  clear
+   29  sudo apt-get update
+   30  sudo apt-get -y upgrade
+   31  sudo apt-get install -y python3-pip
+   32  sudo apt install --upgrade python3-setuptools
+   33  cd ~
+   34  pip3 install --upgrade adafruit-python-shell
+   35  wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py
+   36  sudo -E env PATH=$PATH python3 raspi-blinka.py
+   37  cd Desktop/Wro_obj/object_detect_1/
+   38  source venv/bin/activate
+   39  clear
+   40  sudo apt-get install -y i2c-tools libgpiod-dev python3-libgpiod
+   41  pip3 install --upgrade adafruit-blinka
+   42  ls /dev/i2c* /dev/spi*
+   43  ls
+   44  touch blinka_test.py
+   45  sudo nano blinka_test.py
+   46  python3 blinka_test.py 
+   47  pip3 install adafruit-circuitpython-vl53l0x
+   48  pip install pyttsx3
+   49  pip3 uninstall -y RPi.GPIO
+   50  sudo apt-get install espeak-ng
+   51  clear
+   52  deactivate
+   53  clear
+   54  cd
+   55  clear
+   56  /home/dakshrpi/venv/bin/python3 /home/dakshrpi/obj_final_without_rpio_gpio.py
+   57  clear
+   58  pinout
+   59  chmod +x obj_final_without_rpio_gpio.py
+   60  clear
+   61  crontab -e
+   62  sudo crontab -e
+   63  clear
+   64  sudo reboot
+   65  sudo systemctl stop cron
+   66  sudo systemctl status cron
+   67  /home/dakshrpi/venv/bin/python3 /home/dakshrpi/obj_final_without_rpio_gpio.py
+   68  clear
+   69  sudo systemctl restart cron
+   70  sudo reboot
+   71  sudo crontab -e
+   72  sudo crontab -l
+   73  sudo crontab -e
+   74  sudo reboot
+   75  sudo crontab -e
+   76  sudo reboot
+   77  ps -ef
+   78  ps -ef | grep cron
+   79  ps -ef | grep .py
+   80  sudo reboot
+   81  ps -ef | grep .py
+   82  ps aux | grep "obj_final_without_rpio_gpio.py"
+   83  kill 1791
+   84  sudo kill 1791
+   85  clear
+   86  ps aux | grep "obj_final_without_rpio_gpio.py"
+   87  /home/dakshrpi/venv/bin/python3 /home/dakshrpi/obj_final_without_rpio_gpio.py
+   88  sudo reboot
+   89  sudo poweroff
+   90  history > terminal_history.txt
